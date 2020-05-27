@@ -5,15 +5,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    
     @posts = Post.all.order("created_at DESC")
-
-    if @posts
-      @post = Post.new
-    else
-      redirect_to root_path, notice: "No post" 
-    end
-    
+    @post = Post.new
   end
 
   # GET /posts/1
