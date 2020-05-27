@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2020_05_20_183657) do
 
-  create_table "tweeets", force: :cascade do |t|
-    t.text "tweeet"
+  create_table "posts", force: :cascade do |t|
+    t.text "post"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
