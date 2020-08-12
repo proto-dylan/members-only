@@ -30,6 +30,8 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        WelcomeMailer.with(user: current_user).welcome_email.deliver_later
+ 
         format.html { redirect_to root_path, notice: 'post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
