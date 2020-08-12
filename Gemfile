@@ -40,7 +40,7 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'pg'
-
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -59,6 +59,7 @@ group :development do
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 end
 
 group :test do
